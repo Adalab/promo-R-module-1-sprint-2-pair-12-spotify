@@ -1,5 +1,6 @@
-/*@import 'core/variables';
-@import 'core/reset';
+@import 'core/variables';
+
+/*@import 'core/reset';
 @import 'components/code';
 @import 'components/links';
 @import 'layout/page';
@@ -19,7 +20,7 @@
   }
   
   a {
-    color: white;
+    color: $linkColor;
     text-decoration: none;
   }
   
@@ -37,7 +38,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: black;
+    background: $backgroundColor-nav;
   }
   .hero-title {
     margin-top: 50px;
@@ -61,13 +62,13 @@
   }
   
   .link:hover {
-    color: #4bb84a;
+    color: $linkHover-nav;
   }
   
   .link-signup:before {
     padding-left: 4px;
     content: '|';
-    color: white;
+    color: $linkColor;
   }
   
   /* main */
@@ -80,8 +81,8 @@
   
   .hero {
     padding: 60px 30px 30px 30px;
-    background-color: #0691ff;
-    color: white;
+    background-color: $backgroundColor;
+    color: $textHero;
     height: 50vh;
   }
   
@@ -102,7 +103,7 @@
     margin-top: 30px;
     padding: 5px 25px;
     border-radius: 50px;
-    background-color: #4bb84a;
+    background-color: $colorButton;
     font-size: 10px;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -156,17 +157,17 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 15px;
-    background-color: black;
+    background-color: $backgroundColor-footer;
   }
   
   .footer,
   .footer * {
     font-size: 10px;
-    color: #999;
+    color:$textFooter; 
   }
   
   .footer-menu-links:hover {
-    color: white;
+    color: $linkHover-footer;
   }
   
   .footer-menu-items {
