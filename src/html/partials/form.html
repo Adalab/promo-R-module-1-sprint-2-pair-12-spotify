@@ -1,0 +1,49 @@
+<form action="https://adalab-server-form.herokuapp.com/" method="GET">
+    <fieldset>
+        <legend>Registrarte con tu correo electrónico</legend>
+        <div>
+            <label for="email">¿Cuál es tu correo electrónico?</label>
+            <input type="text" name="email" placeholder="Pon tu correo electrónico" id="email" >
+        </div>
+        <div>
+            <label for="confirm-email">Confirma el correo electrónico</label>
+            <input type="email" name="confirm-email" placeholder="Vuelve a poner tu correo electrónico" id="confirm-email" >
+        </div>
+        <div>
+            <label for="password">Crea una contraseña</label>
+            <input type="password" name="password" placeholder="Crea una contraseña" id="password" >
+        </div>
+        <div>
+            <label for="profile-name">¿Cómo quieres que te llamemos?</label>
+            <input type="text" name="profile-name" placeholder="Pon un nombre de perfil." id="profile-name">
+            <span>Esto aparece en tu perfil.</span>
+        </div>        
+        <div>
+            <label>¿Cuál es tu fecha de nacimiento?</label>
+            <div class="fecha-nacimiento">
+                <label for="day">Día</label>
+                <input type="number" name="day" id="day" placeholder="DD" min="1" max="31" >
+                <label for="Mes">Día</label>
+                <select name="mes" id="mes" placeholder="Mes">
+                    <option value="">Mes</option>
+                    <option value="Enero">Enero</option>
+                    <option value="Febrero">Febrero</option>
+                    <option value="Marzo">Marzo</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Mayo">Mayo</option>
+                    <option value="junio">Junio</option>
+                    <option value="julio">Julio</option>
+                    <option value="agosto">Agosto</option>
+                    <option value="septiembre">Septiembre</option>
+                    <option value="octubre">Octubre</option>
+                    <option value="noviembre">Noviembre</option>
+                    <option value="diciembre">Diciembre</option>
+                <label for="year">Año</label>
+                <input type="number" name="year" id="year" placeholder="AAAA" min="1900" max="2022" >
+                
+            </div>
+        </div>
+        <input type="submit" value="Registrarse">
+    </fieldset>
+    
+</form>
